@@ -36,5 +36,5 @@ polartext_d <- function(vec) {
   vec <- as.character(vec)
   df <- cbind(Comment=vec, HTML = "")
   df[,2] <- sapply(df[,1], polartext_c)
-  return(df)
+  return(df[,2])
 }
